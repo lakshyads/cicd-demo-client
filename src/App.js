@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     const url = 'https://cicd-backend.herokuapp.com/';
-    Axios.get('http://localhost:3002')
+    Axios.get(url)
       .then((response) => {
         // console.log(response);
         setData(response.data);
